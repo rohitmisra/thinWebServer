@@ -8,10 +8,20 @@ import java.util.*;
 import javax.imageio.ImageIO;
 
 public class WebServer {
-	public static void main(String argv[]) throws Exception {
-		// Set the port number.
-		int port = 9998;
+	
+	private int port;
+	 
+	
 
+
+	public WebServer(int port){
+		setPort(port);
+		
+	}
+	
+	public void start() throws Exception{
+		
+		
 		// Establish the listen socket.
 		ServerSocket welcomeSocket = new ServerSocket(port);
 
@@ -29,6 +39,18 @@ public class WebServer {
 			// Start the thread.
 			thread.start();
 		}
+		
+	}
+	
+
+	
+	
+	public int getPort() {
+		return port;
+	}
+
+	public void setPort(int port) {
+		this.port = port;
 	}
 }
 
