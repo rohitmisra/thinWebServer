@@ -1,0 +1,46 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #808080;
+    margin-top:-10px
+}
+
+li {
+    float: left;
+    border-right: 1px solid white;
+}
+
+li:last-child {
+    /*eg. Login button aligned to the right*/
+    float: right;
+    border-left: 1px solid white;
+}
+
+
+a:link, a:visited {
+    line-height: 40px;
+    display: block;
+    color: #FFFFFF;
+    background-color: #f6861f;
+    text-align: center;
+    padding-left: 14px;
+    padding-right: 14px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+a:hover, a:active {
+    background-color: #c2c2c2;
+}
+
+h1{
+    /*replacing text in H1 with image, since it was not advised to change the markup much*/
+    background: url("logo.png") no-repeat;
+    /*hiding the text*/
+    text-indent: 100%;
+    overflow: hidden;
+    line-height: 43px;
+}
