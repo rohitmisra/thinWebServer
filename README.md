@@ -13,7 +13,7 @@ Miniature Java based web server
 Usage
 -----
       WebServer webServer = new WebServer(9996);//desired port number
-			webServer.start();
+      webServer.start();
 
 Web root folder is /WebContent (can be changed in source)
 
