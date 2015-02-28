@@ -1,6 +1,7 @@
 # thinWebServer
+
 Miniature Java based web server 
-===============================
+----------------------------------
 
 
   - A lightweight web server suitable for displaying static web pages.
